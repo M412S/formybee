@@ -1,18 +1,3 @@
-print(
-		"/n".join(
-			[
-				"".join(
-					[
-						(
-							"WindyLuvU"[ x - y % 8]
-							if((x * 0.05) ** 2 + (y * 0.1) ** 2 - 1) ** 3 - (x * 0.05) ** 2 * (y * 0.1) ** 3
-							<= 0
-							else "	"
-						)
-						for x in range(-30, 30)
-					]
-				)
-				for y in range(15, -15, -1)
-			]
-		)
-)
+x="windy";print"   x    x\nx xx x\nx   x   x".replace("x",x)
+for i in range(5):print" "*i+x+" "*(9-i*2),x
+print" "*6,x
